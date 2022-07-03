@@ -6,7 +6,6 @@ const ingridientsList = ingredients.map(ingridient => {
   ingridientItem.classList.add("item");
   return ingridientItem;
 });
-console.log(ingridientsList);
 
 const ingridientsListMarkup = document.querySelector("#ingredients");
 
