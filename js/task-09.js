@@ -12,6 +12,7 @@ const colorSpanReff = document.querySelector(".color");
 changeColorButtonReff.addEventListener("click", onChangeColorButtonClick);
 
 function onChangeColorButtonClick() {
-  bodyReff.style.backgroundColor = `${getRandomHexColor()}`;
-  colorSpanReff.textContent = `${getRandomHexColor()}`;
+  const color = getRandomHexColor();
+  bodyReff.style.backgroundColor = color;
+  colorSpanReff.textContent = color;
 }

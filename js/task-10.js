@@ -18,18 +18,18 @@ function onInputChange(event) {
 
 function onCreateButtonClick() {
   function createBoxes(amount) {
-    const BoxesArray = [];
+    const boxesArray = [];
     let widthValue = 30;
     for (let i = 1; i <= amount; i += 1) {
       const boxMarkupElement = document.createElement("div");
       boxMarkupElement.style.width = `${widthValue}px`;
       boxMarkupElement.style.height = `${widthValue}px`;
       boxMarkupElement.style.backgroundColor = `${getRandomHexColor()}`;
-      BoxesArray.push(boxMarkupElement);
+      boxesArray.push(boxMarkupElement);
       widthValue += 10;
     }
 
-    boxesDivReff.append(...BoxesArray);
+    boxesDivReff.append(...boxesArray);
   }
   return createBoxes(inputValue);
 }
